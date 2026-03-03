@@ -19,94 +19,91 @@
     );
     }
 
-    button 
-    {
-      background-color: purple;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-
-    button:hover 
-    {
-      background-color: violet;
-    }
   </style>
 
-</head>
 
-<body>
+  <meta charset="UTF-8">
+  <title>Pudiin RPG</title>
 
-  <h1>
-  <img src="logo_pudiin.png" alt="Pudiin Royal Prince Gate">
+  <!-- AQUI É O CSS (ESTILO) -->
+  <style>
 
-    <style>
+    /* Remove margens padrão */
+    body {
+      margin: 0;
+      padding-top: 140px; /* espaço pra barra fixa */
+    }
 
-    body 
-    {
-      <header class="navbar">
-    
-      <img src="logo_pudim.png" class="logo">
-    
-      <nav>
-        <a href="#home">HOME</a>
-        <a href="#about">ABOUT</a>
-        <a href="#characters">CHARACTERS</a>
-        <a href="#newsletter">NEWSLETTER</a>
-        <a href="#team">TEAM</a>
-      </nav>
-    
-    </header>
-
-
-      .navbar {
+    /* BARRA DO TOPO */
+    .navbar {
       position: fixed;       
       top: 0;
       left: 0;
       width: 100%;
-    
       height: 120px;
-    
+
       display: flex;
       align-items: center;
       justify-content: space-between;
-    
+
       padding: 0 40px;
-    
+
       background-image: url("speech_balloon.png"); 
       background-size: contain;
       background-repeat: repeat-x;
-    
+
       z-index: 1000;
     }
 
-            nav a {
-        text-decoration: none;
-        color: white;
-        font-size: 24px;
-        margin-left: 40px;
-        font-weight: bold;
-      }
-      
-      nav a:hover {
-        color: yellow;
-
-              body {
-        padding-top: 140px;
-      }
-            }
-      
+    /* Logo */
+    .logo {
+      height: 90px;
     }
-      
-    </style>
 
+    /* Links do menu */
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 24px;
+      margin-left: 40px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: yellow;
+    }
+
+    /* Só pra testar o scroll */
+    section {
+      height: 600px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- AQUI É A BARRA -->
+  <header class="navbar">
     
-</h1>
-  <p>Um RPG sobre salgados 👀</p>
+    <img src="logo_pudiin.png" class="logo">
 
-  <button>Quero acompanhar</button>
+    <nav>
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#characters">CHARACTERS</a>
+      <a href="#newsletter">NEWSLETTER</a>
+      <a href="#team">TEAM</a>
+    </nav>
+
+  </header>
+
+  <!-- PARTES DO SITE -->
+  <section id="home"></section>
+  <section id="about"></section>
+  <section id="characters"></section>
+  <section id="newsletter"></section>
+  <section id="team"></section>
 
 </body>
 </html>
