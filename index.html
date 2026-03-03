@@ -73,7 +73,7 @@
 
     /* Só pra testar o scroll */
     section {
-      height: 600px;
+      height: 900px;
     }
 
   </style>
@@ -118,7 +118,7 @@
   <div class="team-container">
 
     <div class="team-member">
-      <img src="membro1.png" class="team-img">
+      <img src="maikepudiin.png" class="team-img">
       <div class="team-info">
         <h3>maikepudiin</h3>
         <p>Creator, Director, Main Programmer</p>
@@ -127,15 +127,15 @@
 
     
     <div class="team-member">
-      <img src="membro2.png" class="team-img">
+      <img src="cass.png" class="team-img">
       <div class="team-info">
         <h3>Cass</h3>
-        <p>Main Artist, Concept Artist, Creator </p>
+        <p>Main Artist, Concept Artist, Designer </p>
       </div>
     </div>
 
     <div class="team-member">
-  <img src="membro3.png" class="team-img">
+  <img src="perodliz.png" class="team-img">
   <div class="team-info">
     <h3>PerodLiz</h3>
     <p>Main Pixel Artist, Main Composer</p>
@@ -149,6 +149,15 @@
 .team-section {
   padding: 120px 40px;
   text-align: center;
+
+  /* Faz ocupar a tela toda */
+  min-height: 100vh;
+
+  /* Nine-slice */
+  border: 40px solid transparent;
+  border-image: url("speech_balloon.png") 40 fill stretch;
+
+  box-sizing: border-box;
 }
 
 /* TÍTULO GRANDE */
