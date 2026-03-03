@@ -147,19 +147,22 @@
   <style>
 /* SEÇÃO TEAM */
 .team-section {
-  padding: 90px 40px;
+  padding: 120px 40px;
   text-align: center;
-
-  /* Faz ocupar a tela toda */
   min-height: 100vh;
 
-  /* Nine-slice */
-  border: 30px solid transparent;
-  border-image: url("speech_balloon.png") 30 fill stretch;
+  border-style: solid;
+  border-color: transparent;
+
+  /* largura da borda */
+  border-width: 60px 30px 60px 30px;
+  /* topo  direita  baixo  esquerda */
+
+  /* corte da imagem */
+  border-image: url("speech_balloon.png") 60 30 60 30 fill stretch;
 
   box-sizing: border-box;
 }
-
 /* TÍTULO GRANDE */
 .team-title {
   font-size: 80px;
